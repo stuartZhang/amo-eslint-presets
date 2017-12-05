@@ -1,10 +1,10 @@
 {
-  "name": "amo-eslint-presets",
+  "name": "eslint-config-amo",
   "version": "0.0.1",
   "private": true,
   "repository": {
     "type": "git",
-    "url": "https://github.com/stuartZhang/amo-eslint-presets.git"
+    "url": "https://github.com/stuartZhang/eslint-config-amo.git"
   },
   "dependencies": {
     "underscore": "^1.8.3"
