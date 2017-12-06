@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "underscore": "^1.8.3",
+    "eslint-plugin-es6": "file:./plugin-es6",
     "eslint-plugin-sweetjs": "file:./plugin-sweetjs"
   }
 }
