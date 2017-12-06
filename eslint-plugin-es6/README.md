@@ -35,9 +35,20 @@ Then configure the rules you want to use under the rules section.
 
 ```json
 {
-    "rules": {
-        "es6/rule-name": 2
-    }
+  "rules": {
+    "es6/arrow-parens": ["error", "as-needed"],
+    "es6/generator-star-spacing": ["error", "before"],
+    "es6/no-array-concat": ["error", {
+      "fileNamePattern": ".mjs|.js"
+    }],
+    "es6/no-string-charcode": ["error", {
+      "fileNamePattern": ".mjs|.js"
+    }],
+    "es6/no-util-format": ["error", {
+      "fileNamePattern": ".mjs|.js"
+    }],
+    "es6/require-yield": 2,
+  }
 }
 ```
 
