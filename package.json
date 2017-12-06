@@ -7,8 +7,13 @@
     "url": "https://github.com/stuartZhang/eslint-config-amo.git"
   },
   "dependencies": {
-    "underscore": "^1.8.3",
     "eslint-plugin-es6": "file:./eslint-plugin-es6",
-    "eslint-plugin-sweetjs": "file:./eslint-plugin-sweetjs"
+    "eslint-plugin-sweetjs": "file:./eslint-plugin-sweetjs",
+    "requireindex": "^1.1.0",
+    "underscore": "^1.8.3"
+  },
+  "devDependencies": {
+    "eslint": "^4.12.1",
+    "mocha": "^4.0.1"
   }
 }
