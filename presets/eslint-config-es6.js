@@ -1,6 +1,7 @@
 'use strict';
 // ECMAScript 6
 module.exports = {
+  'plugins': ['es6'],
   'rules': {
     'arrow-body-style': ['error', 'as-needed'],
     'arrow-parens': ['off'],
