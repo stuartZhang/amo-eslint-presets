@@ -1,12 +1,7 @@
-const {isMjsFile} = require('./_utils');
 module.exports = function(context){
-  var isbbjsFile = isMjsFile(context);
   var calleePattern = /(?:to|get)Array$/;
   return {
     'MemberExpression': function(node){
-      if (!isbbjsFile) {
-        return;
-      }
       if (node.property.name === 'concat') {
         var isError = false;
         if (node.object.type === 'ArrayExpression') {
@@ -29,11 +24,4 @@ module.exports = function(context){
     }
   };
 };
-module.exports.schema = [{
-  'type': 'object',
-  'properties': {
-    'fileNamePattern': {
-      'type': 'object'
-    }
-  }
-}];
+module.exports.schema = [];

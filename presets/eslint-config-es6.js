@@ -1,6 +1,5 @@
 'use strict';
 // ECMAScript 6
-var bbjsPattern = /\.bbjs$/i;
 module.exports = {
   'rules': {
     'arrow-body-style': ['error', 'always'],
@@ -48,15 +47,9 @@ module.exports = {
     // enforces spacing around the * in yield* expressions.
     'yield-star-spacing': ['error', 'after'],
     // Connect rules
-    'es6/no-array-concat': ['error', {
-      'fileNamePattern': bbjsPattern
-    }],
-    'es6/no-string-charcode': ['error', {
-      'fileNamePattern': bbjsPattern
-    }],
-    'es6/no-util-format': ['error', {
-      'fileNamePattern': bbjsPattern
-    }],
+    'es6/no-array-concat': ['error'],
+    'es6/no-string-charcode': ['error'],
+    'es6/no-util-format': ['error'],
     'es6/arrow-parens': ['error', 'always'],
     'es6/generator-star-spacing': ['error', 'before'],
     'es6/require-yield': ['error']

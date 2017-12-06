@@ -1,12 +1,7 @@
-const {isMjsFile} = require('./_utils');
 module.exports = function(context){
-  var isbbjsFile = isMjsFile(context);
   var calleePattern = /(?:to|get)String$/;
   return {
     'MemberExpression': function(node){
-      if (!isbbjsFile) {
-        return;
-      }
       if (node.object.name === 'String' &&
           node.property.name === 'fromCharCode') {
         context.report(node, 'String.fromCodePoint(<code point>) displaces String.fromCharCode(<char code>) for 32bit UTF-16 characters.');
@@ -36,11 +31,4 @@ module.exports = function(context){
     }
   };
 };
-module.exports.schema = [{
-  'type': 'object',
-  'properties': {
-    'fileNamePattern': {
-      'type': 'object'
-    }
-  }
-}];
+module.exports.schema = [];

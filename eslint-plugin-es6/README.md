@@ -39,13 +39,13 @@ Then configure the rules you want to use under the rules section.
     "es6/arrow-parens": ["error", "as-needed"],
     "es6/generator-star-spacing": ["error", "before"],
     "es6/no-array-concat": ["error", {
-      "fileNamePattern": ".mjs|.js"
+      "srcExtNames": [".mjs"]
     }],
     "es6/no-string-charcode": ["error", {
-      "fileNamePattern": ".mjs|.js"
+      "srcExtNames": [".mjs"]
     }],
     "es6/no-util-format": ["error", {
-      "fileNamePattern": ".mjs|.js"
+      "srcExtNames": [".mjs"]
     }],
     "es6/require-yield": 2,
   }
