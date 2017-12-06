@@ -2,7 +2,7 @@
 // System dependencies
 var _ = require('underscore');
 
-function isBBjsFile(context){
+function isMjsFile(context){
   var fileNamePattern;
   var options = context.options;
   if (options.length > 0) {
@@ -187,7 +187,7 @@ module.exports = {
       };
     },
     'no-util-format': function(context){
-      var isbbjsFile = isBBjsFile(context);
+      var isbbjsFile = isMjsFile(context);
       return {
         'MemberExpression': function(node){
           if (!isbbjsFile) {
@@ -201,7 +201,7 @@ module.exports = {
       };
     },
     'no-string-charcode': function(context){
-      var isbbjsFile = isBBjsFile(context);
+      var isbbjsFile = isMjsFile(context);
       var calleePattern = /(?:to|get)String$/;
       return {
         'MemberExpression': function(node){
@@ -238,7 +238,7 @@ module.exports = {
       };
     },
     'no-array-concat': function(context){
-      var isbbjsFile = isBBjsFile(context);
+      var isbbjsFile = isMjsFile(context);
       var calleePattern = /(?:to|get)Array$/;
       return {
         'MemberExpression': function(node){

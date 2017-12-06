@@ -1,3 +1,7 @@
 {
-  "eslint.enable": false
+  "editor.snippetSuggestions": "top",
+  "editor.tabCompletion": true,
+  "editor.tabSize": 2,
+  "editor.wordWrap": "on",
+  "editor.detectIndentation": false,
 }

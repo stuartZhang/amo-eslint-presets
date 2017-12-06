@@ -12,7 +12,7 @@ module.exports = {
   },
   'rules': {
     'no-console': function(context){
-      var isSjsFile = /\.bbjs$/i.test(context.getFilename());
+      var isSjsFile = /\.mjs$/i.test(context.getFilename());
       return {
         'MemberExpression': function(node){
           if (!isSjsFile) {
@@ -37,7 +37,7 @@ module.exports = {
     }
   },
   'processors': {
-    '.bbjs': {
+    '.mjs': {
       'preprocess': function(rawText, filename){
         var textSegments = rawText.split('\n');
         module.exports.devLog('eslint-plugin-sweetjs ignore the below macro directives:');
