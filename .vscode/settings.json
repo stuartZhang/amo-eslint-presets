@@ -1,4 +1,5 @@
 {
+  "files.trimTrailingWhitespace": true,
   "editor.snippetSuggestions": "top",
   "editor.tabCompletion": true,
   "editor.tabSize": 2,
