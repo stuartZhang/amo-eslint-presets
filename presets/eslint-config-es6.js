@@ -2,7 +2,7 @@
 // ECMAScript 6
 module.exports = {
   'rules': {
-    'arrow-body-style': ['error', 'always'],
+    'arrow-body-style': ['error', 'as-needed'],
     'arrow-parens': ['off'],
     'arrow-spacing': ['error', {
       'before': true,
