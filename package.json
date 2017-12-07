@@ -1,14 +1,17 @@
 {
-  "name": "eslint-config-amo",
+  "name": "eslint-plugin-amo",
   "version": "0.0.1",
   "private": true,
+  "author": "StuartZhang",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "mocha tests --recursive"
+  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/stuartZhang/eslint-config-amo.git"
+    "url": "https://github.com/stuartZhang/eslint-plugin-amo.git"
   },
   "dependencies": {
-    "eslint-plugin-es6": "file:./eslint-plugin-es6",
-    "eslint-plugin-sweetjs": "file:./eslint-plugin-sweetjs",
     "requireindex": "^1.1.0",
     "underscore": "^1.8.3"
   },

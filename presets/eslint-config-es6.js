@@ -1,7 +1,7 @@
 'use strict';
 // ECMAScript 6
 module.exports = {
-  'plugins': ['es6'],
+  'plugins': ['amo'],
   'rules': {
     'arrow-body-style': ['error', 'as-needed'],
     'arrow-parens': ['off'],
@@ -48,11 +48,11 @@ module.exports = {
     // enforces spacing around the * in yield* expressions.
     'yield-star-spacing': ['error', 'after'],
     // Connect rules
-    'es6/no-array-concat': ['error'],
-    'es6/no-string-charcode': ['error'],
-    'es6/no-util-format': ['error'],
-    'es6/arrow-parens': ['error', 'as-needed'],
-    'es6/generator-star-spacing': ['error', 'before'],
-    'es6/require-yield': ['error']
+    'amo/no-array-concat': ['error'],
+    'amo/no-string-charcode': ['error'],
+    'amo/no-util-format': ['error'],
+    'amo/arrow-parens': ['error', 'as-needed'],
+    'amo/generator-star-spacing': ['error', 'before'],
+    'amo/require-yield': ['error']
   }
 };
