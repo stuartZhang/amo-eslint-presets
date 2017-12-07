@@ -1,3 +1,4 @@
+const _ = require('underscore');
 module.exports = function(context){
   var calleePattern = /(?:to|get)Array$/;
   return {
