@@ -4,7 +4,7 @@ module.exports = {
   'rules': {
     'array-bracket-spacing': ['error', 'never'],
     'block-spacing': ['error', 'never'],
-    'brace-style': ['error', 'stroustrup', {
+    'brace-style': ['error', '1tbs', {
       'allowSingleLine': false
     }],
     'camelcase': ['error', {
