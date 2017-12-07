@@ -10,6 +10,12 @@ module.exports = function(context){
       stack.push(0);
     }
   }
+  function increaseCount(){
+    /* istanbul ignore else */
+    if (stack.length > 0) {
+      stack[stack.length - 1] += 1;
+    }
+  }
   /**
    * If the node is a generator function, end counting `yield` keywords, then
    * reports result.
@@ -41,13 +47,8 @@ module.exports = function(context){
     'FunctionDeclaration:exit': endChecking,
     'FunctionExpression': beginChecking,
     'FunctionExpression:exit': endChecking,
-    // Increases the count of `yield` keyword.
-    'YieldExpression': function(){
-      /* istanbul ignore else */
-      if (stack.length > 0) {
-        stack[stack.length - 1] += 1;
-      }
-    }
+    'YieldExpression': increaseCount, // Increases the count of `yield` keyword.
+    'AwaitExpression': increaseCount // Increases the count of `await` keyword.
   };
 };
 module.exports.schema = [];
