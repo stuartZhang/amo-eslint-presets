@@ -87,7 +87,11 @@ module.exports = {
       'keywords': 'always',
       'classes': 'never'
     }],
-    'space-before-function-paren': ['error', 'never'],
+    'space-before-function-paren': ['error', {
+      'anonymous': 'never',
+      'named': 'never',
+      'asyncArrow': 'always'
+    }],
     'space-in-parens': ['error', 'never'],
     'space-infix-ops': ['error', {
       'int32Hint': false
