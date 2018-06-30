@@ -1,7 +1,6 @@
 {
   "name": "eslint-plugin-stzhang",
   "version": "0.0.1",
-  "private": true,
   "author": "StuartZhang",
   "main": "lib/index.js",
   "scripts": {
