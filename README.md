@@ -1,4 +1,4 @@
-# eslint-plugin-amo
+# eslint-plugin-stzhang
 A group of ESLint plugin and presets for the AMO company.
 # Setup
 1. Global tools
@@ -20,22 +20,22 @@ You'll first need to install [ESLint](http://eslint.org):
 $ npm i eslint --save-dev
 ```
 
-Next, install `eslint-plugin-amo`:
+Next, install `eslint-plugin-stzhang`:
 
 ```
-$ npm install eslint-plugin-amo --save-dev
+$ npm install eslint-plugin-stzhang --save-dev
 ```
 
-**Note:** If you installed ESLint globally (using the `-g` flag) then you must also install `eslint-plugin-amo` globally.
+**Note:** If you installed ESLint globally (using the `-g` flag) then you must also install `eslint-plugin-stzhang` globally.
 
 ## Usage
 
-Add `amo` to the plugins section of your `.eslintrc` configuration file. You can omit the `eslint-plugin-` prefix:
+Add `stzhang` to the plugins section of your `.eslintrc` configuration file. You can omit the `eslint-plugin-` prefix:
 
 ```json
 {
     "plugins": [
-        "amo"
+        "stzhang"
     ]
 }
 ```
@@ -46,13 +46,13 @@ Then configure the rules you want to use under the rules section.
 ```json
 {
   "rules": {
-    "amo/arrow-parens": ["error", "as-needed"],
-    "amo/generator-star-spacing": ["error", "before"],
-    "amo/no-array-concat": ["error"],
-    "amo/no-string-charcode": ["error"],
-    "amo/no-util-format": ["error"],
-    "amo/require-yield": 2,
-    "amo/no-console": 2
+    "stzhang/arrow-parens": ["error", "as-needed"],
+    "stzhang/generator-star-spacing": ["error", "before"],
+    "stzhang/no-array-concat": ["error"],
+    "stzhang/no-string-charcode": ["error"],
+    "stzhang/no-util-format": ["error"],
+    "stzhang/require-yield": 2,
+    "stzhang/no-console": 2
   }
 }
 ```
